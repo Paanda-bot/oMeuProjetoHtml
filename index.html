@@ -1,15 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 style="color:cyan">Olá Mundo!!</h1>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seu Nome — Portfólio</title>
+    <meta name="description" content="Portfólio de Seu Nome: projetos, competências e contactos.">
+    <style>
+      :root { color-scheme: light dark; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Arial, sans-serif; line-height: 1.6; }
+      header { padding: 2rem 1rem; border-bottom: 1px solid #ddd; }
+      nav a { margin-right: 1rem; text-decoration: none; }
+      main { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+      section { margin-block: 2.5rem; }
+      .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; }
+      .card img { display: block; width: 100%; height: auto; }
+      .card .content { padding: 1rem; }
+      footer { border-top: 1px solid #ddd; padding: 2rem 1rem; text-align: center; }
+      a.button { display: inline-block; padding: 0.5rem 0.9rem; border: 1px solid #444; border-radius: 6px; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Seu Nome</h1>
+      <p>Estudante/Desenvolvedor — Web, C, Assembly, Linux</p>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#competencias">Competências</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
 
-    <p>Bem-vindo ao meu site !!!</p>
+    <main>
+      <section id="sobre" aria-labelledby="sobre-title">
+        <h2 id="sobre-title">Sobre</h2>
+        <p>Sou estudante de Engenharia Informática focado em programação, sistemas e desenvolvimento web, com prática em C, JavaScript e Linux.</p>
+      </section>
 
-    <p> Este é o meu primeiro site</p>
-</body>
+      <section id="projetos" aria-labelledby="projetos-title">
+        <h2 id="projetos-title">Projetos</h2>
+        <div class="grid">
+          <article class="card">
+            <img
+              src="assets/projeto1-400.jpg"
+              srcset="assets/projeto1-400.jpg 400w, assets/projeto1-800.jpg 800w"
+              sizes="(width <= 600px) 100vw, 33vw"
+              alt="Screenshot do Projeto 1"
+              loading="lazy">
+            <div class="content">
+              <h3>Projeto 1</h3>
+              <p>Descrição curta do que o projeto faz, tecnologias e objetivo.</p>
+              <a class="button" href="#">Ver código</a>
+              <a class="button" href="#">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="assets/projeto2-400.jpg"
+              srcset="assets/projeto2-400.jpg 400w, assets/projeto2-800.jpg 800w"
+              sizes="(width <= 600px) 100vw, 33vw"
+              alt="Screenshot do Projeto 2"
+              loading="lazy">
+            <div class="content">
+              <h3>Projeto 2</h3>
+              <p>Descrição curta do segundo projeto com impacto e resultados.</p>
+              <a class="button" href="#">Ver código</a>
+              <a class="button" href="#">Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="competencias" aria-labelledby="competencias-title">
+        <h2 id="competencias-title">Competências</h2>
+        <p>HTML, CSS, JavaScript, C, Assembly (x86 GAS), Linux, Git, Responsividade, Acessibilidade.</p>
+      </section>
+
+      <section id="contacto" aria-labelledby="contacto-title">
+        <h2 id="contacto-title">Contacto</h2>
+        <p>Email: seuemail@exemplo.com</p>
+        <p>GitHub • LinkedIn • Currículo (PDF)</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>© 2025 Seu Nome</small>
+    </footer>
+  </body>
 </html>
